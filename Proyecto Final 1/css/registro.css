@@ -1,0 +1,68 @@
+.img_registro{
+	height: 300px;
+	width: 100%;
+	background-image:url("../img/registro.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+
+}
+
+form{
+	top: 50%;
+	left: 50%;
+	/*background-color:  #02648e;*/
+	position: center;
+
+}
+
+/* === ESTILO BOTON: POR ANALIZAR; === */
+button.submit {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+/*http://www.developerji.com/Post/Aprenda-a-crear-formularios-profesionales-con-HTML5-y-CSS-/2108*/
+
+.registro{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.renglon_color{
+
+    
+    font-family: 'Fjalla One';
+    font-size: 30px;
+    color: #A5DF00;
+}
+
+.prueba{
+    font-family: 'Fjalla One';
+}
+
+.titulos_tabla{
+    font-family: 'Bungee Inline';
+    color: white;
+}

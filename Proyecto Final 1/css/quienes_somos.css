@@ -1,0 +1,33 @@
+.con_somos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.con_somos h1{
+	text-align: left;
+	font-family: 'Fjalla One';
+	font-size: 30px;
+	color: #009cde;
+
+}
+
+.Texto_inicio{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.Texto_inicio h1{
+	text-align: center;
+	font-family: 'Bungee Inline';
+	font-size: 30px;
+	color: #02648e;
+
+}
+
+.img_somos {
+	max-width: 960px;
+	height: 400px;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}

@@ -1,0 +1,40 @@
+.contactenos_texto h1{
+
+	font-family: 'Bungee Inline';
+	font-size: 30;
+	text-align: left;
+	color: #34495E;
+}
+.contactenos_texto {
+	object-position: center;
+}
+
+
+
+.contacto{
+
+	width: 400px;
+    margin: auto;
+    background-color: #E2ECEE;
+    
+
+	color: #34495E;
+	font-family: 'Fjalla One';
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+.contacto label{
+	color: #34495E;
+	font-family: 'Fjalla One';
+    display: block; /* esto es para que el label se sobreponga a la caja de texto */
+    font-weight: bold;
+}
+.contacto div{
+	color: #34495E;
+	font-family: 'Fjalla One';
+    margin-bottom: 15px; /* esto los separara un poco */
+}

@@ -1,0 +1,79 @@
+.productos ul{
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	display: flex;
+}
+
+/*Caja contenedora*/
+
+.caja{
+	background: white;
+	height: 350px;
+	width:280px;
+	/*Borde blanco a la derecha, para separar cada boton*/
+	border-right: 6px solid white;
+
+}
+
+/*Texto caja promocion*/
+.caja h4{
+	text-align: center;
+	font-family: 'Bungee Inline';
+	background: #34495E;
+	background-size: 100%;
+	width:100%;
+	font-size: 17px;
+}
+/*Nombre del producto*/
+.product-name a{
+	color: white ;
+}
+/*Imágen*/
+.amlabel-div{
+
+	height: 160px;
+	width:235px;
+	/*tamaño del borde*/
+	border: 5px solid transparent;
+	/*Espacio entre la imagen y el borde*/
+    padding: 5px;
+
+    -webkit-border-image: url(../img/border.png) 30 stretch;/* Safari 3.1-5 */
+    -o-border-image: url(../img/border.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(../img/border.png) 30 stretch; 
+    
+}
+
+/*precio normal*/
+.old-price{
+	justify-content: center;
+	height: 30px;
+	font-family: 'Indie Flower';
+	/*Efecto tachado*/
+	text-decoration:line-through;
+	background: #009cde;
+	text-align: center;
+	color: white;
+}
+
+/*Promocion*/
+.special-price{
+	justify-content: center;
+	font-family: 'Baloo Bhaina';
+	color: white;
+	size: 60px;
+	text-align: center;
+	background: #02648e;
+
+}
+
+/*Titulo*/
+
+.Texto_inicio h4{
+	text-align: center;
+	color: #34495E;
+	font-family: 'Bungee Inline';
+	font-size: 30px;
+
+}

@@ -1,0 +1,10 @@
+.contactenos_texto h1{
+
+	font-family: 'Bungee Inline';
+	font-size: 30;
+	text-align: left;
+	color: #34495E;
+}
+.contactenos_texto {
+	object-position: center;
+}
