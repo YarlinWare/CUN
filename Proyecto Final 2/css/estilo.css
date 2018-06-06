@@ -1,0 +1,307 @@
+﻿/*Cambio del tamaño del logo*/
+.logo{
+	height: 130px;
+}
+
+.logo a:hove{
+	transform: none;
+	background-color: white;
+}
+
+
+.logo_encabezado{
+	margin: 10%;
+
+}
+
+
+/*---------MOVIMIENTO DEL LOGO EN EL PRIMER CONTENEDOR ---------*/
+
+/*Tamaño y posicion del logo en el primer contenedor*/
+.imagen-1 img{
+
+	height: 40%;
+	/*para que la transicion de (.imagen-1:hover) sea sutil*/
+	transition: 1s all;
+}
+	/*Movimiento del logo en el primer contenedor*/
+	.imagen-1:hover img{
+		transform: translate(0px, -10px);
+	}
+
+/*---------PIE DE PAGINA ---------*/
+
+/*Pie de pagina (fuente de letra, fondo del contenedor, tamaño, color letra, espaciado)*/
+footer{
+
+	font: 16px 'Arial';
+	background-color: #FF8000;
+	height: 150px;
+	color: #FFFFFF;
+	padding: 5px;
+
+}
+
+
+
+/*---------CONTENEDORES EFECTO PARALLAX ---------*/
+/*Tamaño de los contenedores*/
+.contenedor{
+
+	max-width: 1960px;
+	margin: 0 auto;
+	color: black;
+}
+
+
+
+/*tamaño de las letras h1 de cada bloque, posisión, margen */
+.bloque h1{
+	text-align: center;
+	margin: 0;
+	font-size: 40px;
+	line-height: 150px;
+}
+
+/*Fondo efecto parallaz: Tamaño, no repeticion del fondo, posicion, tamaño ajustado, modo estatico, */
+.bloque.parallax{
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+
+/**/
+.parallax.imagen-1{
+	background-image: url("../img/artesanal.jpg");
+
+
+	
+}
+
+/**/
+.parallax.imagen-2{
+	background-image:url("../img/viaje.jpg"); 
+}
+
+/**/
+.parallax.imagen-3{
+	background-image:url("../img/room.jpg");	
+}
+/**/
+.parallax.imagen-4{
+
+	background-image:url("../img/contactos.jpg"); 
+	background-attachment: inherit;
+	position: center;
+	top: 50%;
+	left: 50%;
+	-webkit-filter: sepia 30% ;
+
+}
+
+/*-----------------------------------Caracteristicas Contenedores------------------------------*/
+
+/*Tamaño de los contenedores*/
+.contenedor-1  p, .contenedor-1 h1{
+	object-position: center;
+	max-width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+
+.contenedor-1 h1{
+	font-family: 'Baloo Bhaina', cursive;
+
+}
+
+.bloque .contenedor-1{
+	background-color: #A5DF00;
+	height: 100%;
+	width: 100%;
+
+
+}
+.contenedor-2  p, .contenedor-2 h1{
+	object-position: center;
+	max-width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+.contenedor-2 h1{
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+
+.bloque .contenedor-2{
+	background-color: #FF8000;
+	height: 100%;
+	width: 100%;
+
+
+}
+.contenedor-3  p,.contenedor-3 h1{
+	object-position: center;
+	max-width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+
+.contenedor-3 h1{
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+.bloque .contenedor-3{
+	background-color: #999933;
+	height: 100%;
+	width: 100%;
+
+
+}
+
+.contenedor-4  p, .contenedor-4 h1{
+	max-width: 960px;
+	margin: 0 auto;
+	color: black;
+}
+
+.contenedor-4 h1{
+	font-family: 'Baloo Bhaina', cursive;
+}
+
+.bloque .contenedor-4{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+
+
+}
+
+/*-----------------------------------Caracteristicas contenedor numero 0------------------------------*/
+
+.Texto_inicio h1{
+	text-align: center;
+	color: #FF8000;
+	font-family: 'Baloo Bhaina';
+	font-size: 60px;
+
+}
+
+
+.Texto_inicio p{
+	text-align: justify-all;
+	max-width: 960px;
+	margin: 0 auto;
+	color: black;
+}
+
+/*-----------------------------------contenedor promociones------------------------------*/
+#lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    width: 80%;
+}
+
+#lista2 ul {
+    margin: 0 0 0 2em; 
+}
+
+#lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #999933;
+    color: white;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#lista2 li:hover{
+    background: #A5DF00;
+}
+
+#lista2 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #A5DF00;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+/*-------------------------------------------------------*/
+.texto_cantactenos{
+	text-align: left;
+	font-family: 'Baloo Bhaina';
+	font-size: 30px;
+
+}
+
+.cont_cantactenos{
+	color: white;
+	font-family: 'trebuchet MS';
+	list-style-type: none;
+
+
+
+}
+.contenedor_cantactenos {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	display: flex;
+	text-align: left;
+	height: 100px;
+	width: 700px;
+}
+/*----------------------------------------------*/
+.foto{
+	width:204px;
+	height:204px;
+	}
+
+.foto1{
+	background-image: url(../img/lina.jpg);
+	background-size: 100%;
+}
+.foto2{
+	background-image: url(../img/sneider.jpg);
+	background-size: 100%;
+
+}
+.nombre{
+	font-family: 'Fjalla One';
+	font-size: 25px;
+	object-position: center;
+
+
+}
+.rol{
+	font-family: 'Baloo Bhaina';
+	font-size: 25px;
+	object-position: center;
+}

@@ -1,0 +1,98 @@
+/*
+Notas:
+1. Los enlaces son elementos de linea por lo cual no ocupan todo el ancho del NAV.
+Por lo cual hay que convertirlos en elementos de bloque para ello usamos el (display: flex).
+Con (justify-content: space-between), calculamos cuanto espacio debe haber entre cada uno de ellos.
+y para que todos tengan el mismo tamaño (flex: 1) ;
+
+2. Uso de propiedades AFTER y BEFORE, siempre hay que usar el atributo CONTENT, 
+*/
+
+
+
+/*---------DISEÑO DE EL MENU DE NAVEGACIÓN ---------*/
+/*ABUELO*/
+
+/*elementos de bloque, espacio entre cada link, tamaño, fondo, margen del boton*/
+.navbar{
+	font-family: 'Indie Flower';
+	font-size: 24px;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	background: #FF8000;
+	margin-bottom: 60px;
+
+}
+
+
+/*PADRE*/
+
+/*
+Alinearemos cada uno de los enlaces de manera vertical con Display: flex (para manejar su alineacion vertical como horizontal),
+y les diremos que su alineacion sea centrada en ambos casos con  
+	justify-content: center;
+	align-items: center;
+
+*/
+	.navbar a{ 
+
+		flex: 1 ;
+		display: flex;
+		/*alineación horizontal*/
+		justify-content: center;
+		/*alineación vertical*/
+		align-items: center;
+		color: white; 
+		/*Sin subrayado*/
+		text-decoration: none;
+		/*centrados desde su propio enlace*/
+		text-align: center;
+		/*Borde blanco a la derecha, para separar cada boton*/
+		border-right: 2px solid white;
+		/*fuente de letra y tamaño*/
+		font: 16px 'Arial';
+		/*Declaramos su posicion relativa y con el "hijo" le declaramos una posicion absoluta*/
+		position: relative;
+
+	}
+
+
+/*HIJO*/
+	.navbar a.active:after{ 
+		content: "";
+		/*tamaño del borde le boton en la parte de abajo*/ 
+		height: 5px;/*Alto*/
+		width: 80%;/*Ancho*/
+		/*color*/
+		background:  #A5DF00; 
+		/*posición*/
+		position: absolute;
+		bottom: 0;
+		/*valor que se le suma al 80% para que sobre un 10% al lado derecho y de tal manera se vea centrado la barrita*/
+		left: 10%;
+	} 
+
+.arriba a{
+	/*Fuente de letra google font*/		
+	font-family:'Indie Flower';
+}
+
+
+/*---------MOVIMIENTO DEL LOGO EN EL PRIMER CONTENEDOR ---------*/
+
+
+/* cambio de menu cuando el mouse pase por encima(cambio tamaño de la fuente, color de fondo, el tipo de fuente)*/
+.navbar a:hover{
+	/*Animacion*/
+	transition: .5s all;
+	transform: translate(0, 3px);
+	font-size: 30px;
+	/*Fuente de letra google font*/		
+	font-family:'Indie Flower';
+	background-color: #A5DF00;
+}
+/*Cuando se le da Click a algun botón del menú este cambie la letra a color negro*/
+.navbar a:active{
+	color: black;
+}
